@@ -12,7 +12,7 @@ namespace CareerCloud.BusinessLogicLayer
         where TPoco : IPoco
         {
             protected IDataRepository<TPoco> _repository;
-            public BaseLogic(IDataRepository<TPoco> repository)//construter
+            public BaseLogic(IDataRepository<TPoco> repository)//const
             {
                 _repository = repository;
             }
