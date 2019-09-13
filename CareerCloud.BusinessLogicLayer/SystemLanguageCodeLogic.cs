@@ -33,7 +33,7 @@ namespace CareerCloud.BusinessLogicLayer
                 base.Update(pocos);
             }
 
-            protected void Verify(SystemLanguageCodePoco[] pocos)
+            protected override void Verify(SystemLanguageCodePoco[] pocos)
             {
                 List<ValidationException> exceptions = new List<ValidationException>();
                 foreach (SystemLanguageCodePoco poco in pocos)

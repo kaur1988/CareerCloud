@@ -21,5 +21,7 @@ namespace CareerCloud.Pocos
         [Column("Is_Succesful")]
         public Boolean IsSuccesful { get; set; }
 
+        public virtual SecurityLoginPoco SecurityLogin { get; set; }
+
     }
 }
