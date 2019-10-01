@@ -13,8 +13,9 @@ namespace CareerCloud.EntityFrameworkDataAccess
 
     {
 
-        public CareerCloudContext() :base(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString)
-        {                     
+        public CareerCloudContext(bool createProxy= true) :base(ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString)
+        {
+            Configuration.ProxyCreationEnabled = createProxy;
         }
 
 

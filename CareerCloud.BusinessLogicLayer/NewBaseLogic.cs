@@ -33,7 +33,7 @@ namespace CareerCloud.BusinessLogicLayer
             _repository.Remove(pocos);
         }
         public virtual void Add(TPoco[] pocos)
-        {
+                  {
             _repository.Add(pocos);
         }
     }
