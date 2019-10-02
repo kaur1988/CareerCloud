@@ -43,6 +43,7 @@ namespace CareerCloud.BusinessLogicLayer
                     exceptions.Add(new ValidationException(107, $"Password for ApplicationEduction{poco.Major} must be at least 3 characters"));
                 }
                 if(poco.StartDate>DateTime.Now)
+
                 {
                     exceptions.Add(new ValidationException(108, $"Start date for ApplicationEduction{poco.StartDate} Cannot be greater than today "));
                 }
